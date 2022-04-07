@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Products</title>
+<link rel="stylesheet" 
+href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link id='stylecss' type="text/css" rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+
+<title>Attack Test</title>
+
+</head>
+<body>
+
+    <div class="nav">
+
+        <ul>
+            <li><a href="home.php">My Profile</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="logout.php" id="signout">Sign Out</a></li>
+        </ul> 
+    </div>
+
+    <div class="products">
+
+        <div class="appleCard">
+            <img src= "images/apple.png" name="img" class="img" alt="apple" > 
+
+              
+                    <p>Price: $1500.00</p>
+                    <form action="checkout.php" method="post">
+                        <p><input name="price" type="hidden" value="1500.00"/></p>
+                        <p><input name="submit" type="submit" value="Buy"/></p>
+                    </form> <br>
+                    <a href="review.php">Review Product</a>
+
+               
+        </div>
+
+        <div class="dellCard">
+            <img src= "images/dell.png" class="img" alt="dell" > 
+
+            <p>Price: $1100.00</p>
+                    <form action="checkout.php" method="post">
+                        <p><input name="price" type="hidden" value="1500.00"/></p>
+                        <p><input name="submit" type="submit" value="Buy"/></p>
+                    </form><br>
+                    <a href="index.php">Review Product</a>
+ 
+
+
+        </div>
+
+        <div class="hpCard">
+            <img src= "images/hp.png" class="img" alt="hp" > 
+           
+
+            <p>Price: $2000.00</p>
+                    <form action="checkout.php" method="post">
+                        <p><input name="price" type="hidden" value="1500.00"/></p>
+                        <p><input name="submit" type="submit" value="Buy"/></p>
+                    </form><br> 
+                    <a href="index.php">Review Product</a>
+
+
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
