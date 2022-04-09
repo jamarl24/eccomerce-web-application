@@ -1,24 +1,23 @@
-<?  
-    require_once "db_config.php";
+<?php 
 
-   
+require_once("db_config.php");
 
-    if(isset($_POST["signup"])){
+    if(isset($_POST["signup"]))
+    {
         $email=$_POST["email"];
-        $first_name=$_POST["firstname"];
-        $last_name=$_POST["lastname"];
-        $password=$_POST["pass"];
-
-        $sql = "INSERT INTO users (email, first_name, last_name, pass) 
-        VALUES ('$email','$first_name','$last_name','$password')";
-
+        $firstname=$_POST["firstname"];
+        $lastname=$_POST["lastname"];
+        $password=$_POST["password"];
+    
+        $sql ="INSERT INTO users (email, first_name,last_name, password) 
+        VALUES ('$email', '$firstname', '$lastname','$password')";
+       
         mysqli_query($link,$sql);
 
         header("location: index.html");
     }
 
 ?>
-
 <html>
     <head>
     
@@ -46,20 +45,13 @@
 
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" name="pass" placeholder="Enter your Password">
+                    <input type="password" class="form-control" name="password" placeholder="Enter your Password">
                 </div>
-                <!-- <button type="submit" name = "signup" class="btn btn-primary">Sign up</button> -->
-                <input class="btn" type="submit" name="signup" value="signup">
+                <button type="submit" name = "signup" class="btn btn-primary">Sign up</button>
+              
             </form>
 
          </div>
     </div>
 </body>
-
-
-
-
-
-
-
 </html>
