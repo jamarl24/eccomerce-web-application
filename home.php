@@ -21,36 +21,102 @@ href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/2e089d9f04.js" crossorigin="anonymous"></script>
+<script src="js/product.js"></script>
+
+
 
 <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+<!-- <link id='stylecss' type="text/css" rel="stylesheet" href="style.css"> -->
 
 </head>
 <body>
 <div class="nav">
-
+<!-- <div class="nav"> -->
+<div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Products</button>
+            <div id ="myDropdown" class="dropdown-content">
+                <a href="#electronics">Electronics</a>
+                <a href="#clothing">Clothing</a>
+                <a href="#household">Household</a>
+            </div>
+        </div> 
 <ul>
-    <li><a href="home.php">My Profile</a></li>
-    <li><a href="products.html">Products</a></li>
+
+    <!-- <li><a href="home.php">Home</a></li> -->
+    <!-- <li><a href="products.html">Products</a></li> -->
     <li><a href="#contact">Contact</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="logout.php" id="signout">Sign Out</a></li>
 </ul>
 
 </div>
+
 <div class="login">
 
-<h2>Welcome to our Ali online Shop</h2>
+<h2>Welcome to J's online Shop</h2>
 
 
-    <div class="cardProfile">
-     <img src= "images/avatar.png" class="img" alt="Avatar" >   
+     <div><input type="text" placeholder="Search.." class="searchbar"></div>
 
-    <h4><?php echo $_SESSION["first_name"]." ".$_SESSION["last_name"]; ?></h4>
-    </div>
+<div class="homeProductsAd">  
     
+     <div class="electronicdiv">
+         <h3 class="productHeadings">Electronics</h3>
+
+     <i class="fa-solid fa-angle-right"  id="nextBtn" ></i>
+     <i class="fa-solid fa-angle-left" id="prevBtn"></i>
+
+  
+         <div class="electronics">
+             <img src="./images/phone.png" id="lastClone" alt="">
+             <img src="./images/laptop.png" alt="">
+             <img src="./images/camera.png" alt="">
+             <img src="./images/phone.png" alt="">
+             <img src="./images/laptop.png" id="firstClone" alt="">
+         </div>
+
+     </div>
+     <!-- <button id= "prevBtn">Prev</button>
+     <button id= "nextBtn">Next</button> -->
+
+     <div class= "clothingdiv">
+     <h3 class="productHeadings">Clothing</h3>
+
+     <i class="fa-solid fa-angle-right" id="nextBtnClothing" ></i>
+     <i class="fa-solid fa-angle-left" id="prevBtnClothing"></i>
+
+         <div class="clothing">
+            <img src="./images/clothing3.png" id="lastCloneClothing" alt="">
+            <img src="./images/clothing1.png" alt="">
+            <img src="./images/clothing2.png" alt="">
+            <img src="./images/clothing3.png" alt="">
+            <img src="./images/clothing1.png" id="firstCloneClothing" alt="">
+         </div>
+
+     </div>
+
+     <div class= "householdiv">
+     <h3 class="productHeadings">Household</h3>
+
+     <i class="fa-solid fa-angle-right" id="nextBtnHousehold" ></i>
+     <i class="fa-solid fa-angle-left" id="prevBtnHousehold"></i>
+
+         <div class="household">
+            <img src="./images/household3.png" id="lastCloneHousehold" alt="">
+            <img src="./images/household1.png" alt="">
+            <img src="./images/household2.png" alt="">
+            <img src="./images/household3.png" alt="">
+            <img src="./images/household1.png" id="firstCloneHousehold" alt="">   
+        </div> 
+
+     </div>
+</div>     
+
 
 </div>
 
+<script src="app.js"></script>
    
 </body>
 </html>

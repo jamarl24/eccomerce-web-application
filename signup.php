@@ -19,10 +19,17 @@ require_once("db_config.php");
 
 ?>
 <html>
-    <head>
-    
+<head>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <link rel="stylesheet" 
+    href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
-    </head>
+</head>
+
     <body>
     <div class="container">
         <div class="card">
@@ -54,4 +61,5 @@ require_once("db_config.php");
          </div>
     </div>
 </body>
+
 </html>
