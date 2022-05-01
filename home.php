@@ -36,7 +36,7 @@ href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css >
 <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Products</button>
             <div id ="myDropdown" class="dropdown-content">
-                <a href="#electronics">Electronics</a>
+                <a href="electronics.html">Electronics</a>
                 <a href="#clothing">Clothing</a>
                 <a href="#household">Household</a>
             </div>
