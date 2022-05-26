@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Products</title>
 <link rel="stylesheet" 
 href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css >
@@ -10,7 +10,7 @@ href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link id='stylecss' type="text/css" rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+<link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
 
 <title>Attack Test</title>
 
@@ -30,122 +30,116 @@ href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css >
 
     <div class="products">
 
-        <div class="appleCard">
+    <!-- change class name to shop item -->
+        <div class="shop-item">
+            <span class="shop-item-title"> Apple Macbook</span>
             <img src= "images/apple.png" name="img" class="img" alt="apple" > 
-
-              
-                    <p>Price: $1500.00</p>
-                    <form action="checkout.php" method="post">
-                        <p><input name="price" type="hidden" value="1500.00"/></p>
-                        <p><input name="submit" type="submit" value="Add to cart"/></p>
-                    </form> <br>
-                    <a href="#">Review Product</a>
+            <div class="shop-item-details">
+                <span class="shop-item-price">$1500</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+            <a href="#">Review Product</a>
 
                
         </div>
 
-        <div class="dellCard">
+        <div class="shop-item">
+            <span class="shop-item-title"> Dell laptop</span>
             <img src= "images/dell.png" class="img" alt="dell" > 
+            <div class="shop-item-details">
+                <span class="shop-item-price">$800</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+            <a href="#">Review Product</a>
 
-            <p>Price: $1100.00</p>
-                    <form action="checkout.php" method="post">
-                        <p><input name="price" type="hidden" value="1500.00"/></p>
-                        <p><input name="submit" type="submit" value="Add to cart"/></p>
-                    </form><br>
-                    <a href="#">Review Product</a>
- 
 
 
         </div>
 
-        <div class="hpCard">
+        <div class="shop-item">
+            <span class="shop-item-title"> HP laptop</span>
             <img src= "images/hp.png" class="img" alt="hp" > 
+            <div class="shop-item-details">
+                <span class="shop-item-price">$950</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+            <a href="#">Review Product</a>
            
 
-            <p>Price: $2000.00</p>
-                    <form action="checkout.php" method="post">
-                        <p><input name="price" type="hidden" value="1500.00"/></p>
-                        <p><input name="submit" type="submit" value="Add to cart"/></p>
-                    </form><br> 
-                    <a href="#">Review Product</a>
-
+           
 
 
         </div>
 
-        <div class="hpCard">
+        <div class="shop-item">
+            <span class="shop-item-title">Canon camera</span>
             <img src= "images/canon.png" class="img" alt="hp" > 
+            <div class="shop-item-details">
+                <span class="shop-item-price">$600</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+            <a href="#">Review Product</a>
            
 
-            <p>Price: $2000.00</p>
-                    <form action="checkout.php" method="post">
-                        <p><input name="price" type="hidden" value="1500.00"/></p>
-                        <p><input name="submit" type="submit" value="Add to cart"/></p>
-                    </form><br> 
-                    <a href="#">Review Product</a>
+          
 
 
 
         </div>
 
-        <div class="hpCard">
+        <div class="shop-item">
+            <span class="shop-item-title">Sony camera</span>
             <img src= "images/sony.png" class="img" alt="hp" > 
+            <div class="shop-item-details">
+                <span class="shop-item-price">$1000</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+            <a href="#">Review Product</a>
            
 
-            <p>Price: $2000.00</p>
-                    <form action="checkout.php" method="post">
-                        <p><input name="price" type="hidden" value="1500.00"/></p>
-                        <p><input name="submit" type="submit" value="Add to cart"/></p>
-                    </form><br> 
-                    <a href="#">Review Product</a>
+            
 
 
 
         </div>
 
-        <div class="hpCard">
+        <div class="shop-item">
+            <span class="shop-item-title">Iphone 12 Pro</span>
             <img src= "images/iphone.png" class="img" alt="hp" > 
+            <div class="shop-item-details">
+                <span class="shop-item-price">$1500</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+            <a href="#">Review Product</a>
            
 
-            <p>Price: $2000.00</p>
-                    <form action="checkout.php" method="post">
-                        <p><input name="price" type="hidden" value="1500.00"/></p>
-                        <p><input name="submit" type="submit" value="Add to cart"/></p>
-                    </form><br> 
-                    <a href="#">Review Product</a>
+           
 
 
 
         </div>
 
-        <div class="hpCard">
+        <div class="shop-item">
+            <span class="shop-item-title">Samsung s21</span>
             <img src= "images/samsung.png" class="img" alt="hp" > 
-           
-
-            <p>Price: $2000.00</p>
-                    <form action="checkout.php" method="post">
-                        <p><input name="price" type="hidden" value="1500.00"/></p>
-                        <p><input name="submit" type="submit" value="Add to cart"/></p>
-                    </form><br> 
-                    <a href="#">Review Product</a>
-
+            <div class="shop-item-details">
+                <span class="shop-item-price">$1400</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+            <a href="#">Review Product</a>
 
 
         </div>
 
-        <div class="hpCard">
+        <div class="shop-item">
+            <span class="shop-item-title">Google pixel</span>
             <img src= "images/googlepixel.png" class="img" alt="hp" > 
-           
-
-            <p>Price: $2000.00</p>
-                    <form action="checkout.php" method="post">
-                        <p><input name="price" type="hidden" value="1500.00"/></p>
-                        <p><input name="submit" type="submit" value="Add to cart"/></p>
-                    </form><br> 
-                    <a href="#">Review Product</a>
-
-
-
+            <div class="shop-item-details">
+                <span class="shop-item-price">$1300</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+            <a href="#">Review Product</a>
+    
         </div>
 
     </div>
