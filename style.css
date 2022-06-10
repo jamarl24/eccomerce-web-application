@@ -5,6 +5,10 @@
 }
 
 
+section{
+    padding: 5em 2em;
+}
+
 .nav{
     padding-bottom: 10px;
     background-color: #333;
@@ -41,10 +45,14 @@
     width: 100%;
 }
 
+
 .products{
    float: left;
    padding-left: 10px;
    padding-top: 20px;
+   
+   
+   
     
 }
 .shop-item{
@@ -53,6 +61,11 @@
     padding: 10px 15px 20px 15px;
     width: 400px;
     display: inline-block;
+   
+}
+.cart{
+    margin: auto;
+   
 }
 
 .card a{
@@ -322,6 +335,12 @@
     font-size: 1.1em;
 }
 
+.clothing-cart{
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
   
